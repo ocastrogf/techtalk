@@ -1,7 +1,19 @@
 package com.techtalk
 
 class FrontendController {
-
-    def index() { }
+	//static allowedMethods = [putsomething:'POST']
+	//static defaultAction ='deleteSomething'
+	static namespace='users'
+    def index() {
+		//render(view: 'doSomething')
+	}
+	
+	def doSomething(){}
+	
+	def putsomething(){}
+	
+	def deleteSomething(){
+		//forward action: "index"
+	}
 	
 }
