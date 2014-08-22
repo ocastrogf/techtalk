@@ -1,10 +1,12 @@
 package com.techtalk
 
 class User {
-	String password
+	String firstname
 	String username
+	UserRole role
     static constraints = {
-		password (blank: false)
+		firstname (blank: false)
 		username blank: false
+		role nullable:true
     }
 }
